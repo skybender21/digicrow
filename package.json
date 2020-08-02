@@ -1,25 +1,29 @@
 {
-  "name": "digicrow",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
-  },
-  "dependencies": {
-    "core-js": "^3.6.5",
-    "vue": "^2.6.11",
-    "vue-router": "^3.2.0"
-  },
-  "devDependencies": {
-    "@vue/cli-plugin-babel": "~4.4.0",
-    "@vue/cli-plugin-eslint": "~4.4.0",
-    "@vue/cli-plugin-router": "~4.4.0",
-    "@vue/cli-service": "~4.4.0",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^6.7.2",
-    "eslint-plugin-vue": "^6.2.2",
-    "vue-template-compiler": "^2.6.11"
-  }
+    "name": "digicrow",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "serve": "vue-cli-service serve",
+        "build": "vue-cli-service build",
+        "lint": "vue-cli-service lint",
+        "monaca:preview": "npm run dev",
+        "dev": "browser-sync start -s www/ --watch --port 8080 --ui-port 8081"
+    },
+    "dependencies": {
+        "core-js": "^3.6.5",
+        "vue": "^2.6.11",
+        "vue-router": "^3.2.0"
+    },
+    "devDependencies": {
+        "@vue/cli-plugin-babel": "~4.4.0",
+        "@vue/cli-plugin-eslint": "~4.4.0",
+        "@vue/cli-plugin-router": "~4.4.0",
+        "@vue/cli-service": "~4.4.0",
+        "babel-eslint": "^10.1.0",
+        "browser-sync": "^2.24.5",
+        "cordova": "^9.0.0",
+        "eslint": "^6.7.2",
+        "eslint-plugin-vue": "^6.2.2",
+        "vue-template-compiler": "^2.6.11"
+    }
 }
